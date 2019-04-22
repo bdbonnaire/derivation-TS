@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+
+    \usepackage{ae,lmodern}
+    \usepackage[french]{babel}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{amsmath}
+    \usepackage{amsfonts}
+    \usepackage[a4paper, total={16.5cm, 26.5cm}]{geometry}
+
+    \newcommand{\R}{\mathbb R}
+    \newcommand{\de}[1]{(#1)'}
+    
+    \selectlanguage{french}
+    \title{Dérivation Terminale S\\
+        \large Rappels et Exercices}
+    \date{}
+    \author{}
+
+\begin{document}
+    
+    \maketitle
+    
+    \section{Rappels}
+        \subsection{Théorie :}
+        On dit qu'une fonction $F$ sur $\R$ est dérivable en un point $x_0$ si
+        \begin{equation}
+            \lim\limits_{h \to 0} \frac{f(x_0 + h)-f(x_0)}{h} \text{ existe. On nomme alors ce nombre $f'(x_0)$} 
+        \end{equation}
+        ou (ce qui est équivalent)
+        \begin{equation*}
+            \lim\limits_{x \to x_0} \frac{f(x)-f(x_0)}{x-x_0} = f'(x_0)            
+        \end{equation*}
+
+        Souvenez vous de cette formule car elle permet de prouver certaines limites ($\lim\limits_{x \to 0} \frac{\sin{x}}{x}$ par exemple, essayez !) ou de comprendre la relation entre la dérivée d'une fonction en un point et le coefficiant de la tangeante en ce point.
+
+        \subsection{Formules :}
+        \paragraph{formules à connaître impérativement !}
+        Elles sont au nombre de 4 : Soient $f$ et $g$ deux fonctions dérivables et $x,y \in  \R $
+        \begin{align}
+            (a(x) + g(x))' &= a' +g'\\
+            (a(x) \times g(x))' &= a'(x)g(x) + a(x)g'(x)\\
+            (a(g(x)))' &= a'(g(x))\times g'(x)\\
+            (x^y)' &= y\times x^{y-1}
+        \end{align}
+        Avec ces formules, vous pouvez retrouver toutes les autres !
+        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (4) et (3) :
+        \begin{align*}
+            \frac{1}{f(x)} &= f(x)^{-1} \tag*{Or, selon (4),}\\ 
+            (y^{-1})' &= -1\times y^{-2} =-\frac{1}{y^2} \tag*{On a déjà la formule pour $1/y$ !}\\
+            \text{Donc } \left(\frac{1}{f(x)}\right)' &=- \frac{f'(x)}{f(x)^2} \tag*{Selon (3) en prenant $a(x)=x^{-1}$ et $g(x)=f(x)$} 
+        \end{align*}
+
+        \paragraph{formule utile}
+        \begin{equation*}
+            (\frac{f(x)}{g(x)})' = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}
+        \end{equation*}
+        Il est bien utile (bien que non nécessaire) de connaître cette formule par coeur.\\
+        Exercice : retrouvez-la avec les formules précédentes.
+        \subsection{dérivées classiques :}
+        \begin{align*}
+            \de{cos(x)} &= -sin(x) &\de{sin(x)} &= cos(x) & \de{e^x} &= e^x \\
+            \de{ln(x)} &= \frac{1}{x} 
+        \end{align*}
+        \subparagraph{Remarque 1} vous trouvez peut-être qu'il manque quelques fonctions à cette section comme $\frac{1}{x}$ ou $\sqrt{x}$. Pourtant celles-ci peuvent (et doivent !) être retrouvées via les relations (2), (3) et (4). Comme toujours en maths, nous recherchons l'effort minimum.\\
+        Il est inutile de préciser qu'il est vivement conseillé de faire les calculs par soi-même (pensez que $\sqrt{x} = x^{\frac{1}{2}}$ (pourquoi ?)).
+        \subparagraph{Remarque 2} Prouvez que, pour $a$ une constante et $f$ une fonction sur $\R$ que
+        \begin{equation*}
+         \de{a\times f(x)} = a\times f'(x) 
+        \end{equation*}
+         une bonne fois pour toute et souvenez-vous-en ! Il est inutile est bien trop lent d'appliquer à chaque fois la formule (2) du produit !  
+
+    \section{Exercices}
+
+
+\end{document}
