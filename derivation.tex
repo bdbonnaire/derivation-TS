@@ -38,17 +38,17 @@
         \paragraph{formules à connaître impérativement !}
         Elles sont au nombre de 4 : Soient $f$ et $g$ deux fonctions dérivables et $x,y \in  \R $
         \begin{align}
-            (a(x) + g(x))' &= a' +g'\\
-            (a(x) \times g(x))' &= a'(x)g(x) + a(x)g'(x)\\
-            (a(g(x)))' &= a'(g(x))\times g'(x)\\
-            (x^y)' &= y\times x^{y-1}
+            (a(x) + g(x))' &= a' +g' \label{addition} \\
+            (a(x) \times g(x))' &= a'(x)g(x) + a(x)g'(x) \label{produit}\\
+            (a(g(x)))' &= a'(g(x))\times g'(x) \label{compose}\\
+            (x^y)' &= y\times x^{y-1} \label{exposant}
         \end{align}
         Avec ces formules, vous pouvez retrouver toutes les autres !
-        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (4) et (3) :
+        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (\ref{compose}) et (\ref{exposant}) :
         \begin{align*}
-            \frac{1}{f(x)} &= f(x)^{-1} \tag*{Or, selon (4),}\\ 
+            \frac{1}{f(x)} &= f(x)^{-1} \tag*{Or, selon (\ref{exposant}),}\\ 
             (y^{-1})' &= -1\times y^{-2} =-\frac{1}{y^2} \tag*{On a déjà la formule pour $1/y$ !}\\
-            \text{Donc } \left(\frac{1}{f(x)}\right)' &=- \frac{f'(x)}{f(x)^2} \tag*{Selon (3) en prenant $a(x)=x^{-1}$ et $g(x)=f(x)$} 
+            \text{Donc } \left(\frac{1}{f(x)}\right)' &=- \frac{f'(x)}{f(x)^2} \tag*{Selon (\ref{compose}) en prenant $a(x)=x^{-1}$ et $g(x)=f(x)$} 
         \end{align*}
 
         \paragraph{formule utile}
