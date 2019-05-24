@@ -53,7 +53,7 @@
 
         \subsection{Formules :}
        
-        \paragraph{formules à connaître impérativement !}
+        \paragraph{Formules à connaître impérativement !}
         Elles sont au nombre de 4 : \\Soient $u$ et $v$ deux fonctions dérivables et $x,n \in  \R $
         \begin{alignat}{3}
             &\text{addition} &\qquad& (u(x) + v(x))'&& = u'+v' \label{addition} \\
@@ -73,12 +73,24 @@
                     \de{\frac{1}{f(x)}}=u'(v(x))\times v'(x)=-\frac{1}{f(x)}\times f'(x)=-\frac{f'(x)}{f(x)}
                 \end{equation*}
             On retrouve bien la formule que vous connaissez.
-        \paragraph{formule utile}
+        \paragraph{Formules utiles}
+        Il est bien utile (bien que non nécessaire, exercice: retrouvez la) de connaître cette formule par coeur.
+        \subparagraph{division}
         \begin{equation*}
             \de{\frac{f(x)}{g(x)}} = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}
         \end{equation*}
-        Il est bien utile (bien que non nécessaire) de connaître cette formule par coeur.\\
-        Exercice : retrouvez-la avec les formules précédentes.
+
+        \subparagraph{équation de la tangente en $x_0$:}
+        \begin{equation*}
+            y(x)=f'(x_0)(x-x_0) +f(x_0) 
+        \end{equation*}
+        Cette formule qui peut paraître un peu compliquée se retrouve facilement:\\
+        On sait que la droite à pour coefficient directeur $f'(x_0)$ donc $y(x)$ est de la forme
+        \begin{equation*}
+            y(x)=f'(x_0)x+b
+        \end{equation*}
+        De plus, on sait que $y(x_0)=f(x_0)$ (tangente en $x_0$) donc $y(x_0)=f(x_0)= f'(x_0)x_0 +b$ d'où $b=f(x_0) -f(x_0)x_0$. Il suffit après de mettre en
+
         \subsection{dérivées classiques :}
         \begin{align*}
             \de{\cos{x}} &= -\sin{x} &\de{\sin{x}} &= \cos{x} & \de{\e{x}} &= \e{x} \\
