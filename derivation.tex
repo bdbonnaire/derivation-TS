@@ -47,9 +47,14 @@
         \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (\ref{compose}) et (\ref{exposant}) :\\
             Commençons par trouver la dérivée de $\frac{1}{x}$.
             On sait que $\frac{1}{x}=x^{-1}$ donc d'après (\ref{exposant}) on a :
-            \begin{equation*}
-                \de{\frac{1}{x}}=\de{x^{-1}}=(-1)\times x^{-2} = -\frac{1}{x^2}
-            \end{equation*}
+                \begin{equation*}
+                    \de{\frac{1}{x}}=\de{x^{-1}}=(-1)\times x^{-2} = -\frac{1}{x^2}
+                \end{equation*}
+            Il suffit maintenant d'appliquer la formule (\ref{compose}) avec $u(x)=\frac{1}{x}$ et $v(x)=f(x)$. On a 
+                \begin{equation*}
+                    \de{\frac{1}{f(x)}}=u'(v(x))\times v'(x)=-\frac{1}{f(x)}\times f'(x)=-\frac{f'(x)}{f(x)}
+                \end{equation*}
+            On retrouve bien la formule que vous connaissez.
         \paragraph{formule utile}
         \begin{equation*}
             (\frac{f(x)}{g(x)})' = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}
