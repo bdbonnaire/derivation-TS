@@ -55,7 +55,7 @@
        
         \paragraph{Formules à connaître impérativement !}
         Elles sont au nombre de 4 : \\Soient $u$ et $v$ deux fonctions dérivables et $x,n \in  \R $
-        \begin{alignat}{3}
+        \begin{alignat}{3} 
             &\text{addition} &\qquad& (u(x) + v(x))'&& = u'+v' \label{addition} \\
             &\text{produit} && (u(x) \times v(x))'&& = u'(x)v(x) + u(x)v'(x) \label{produit}\\
             &\text{composition} && (u(v(x)))'&& = u'(v(x)) \times v'(x) \label{compose}\\
@@ -91,7 +91,16 @@
         \end{equation*}
         De plus, on sait que $y(x_0)=f(x_0)$ (tangente en $x_0$) donc $y(x_0)=f(x_0)= f'(x_0)x_0 +b$ d'où $b=f(x_0) -f(x_0)x_0$. Il suffit après de mettre en facteur.
 
-        \subsection{dérivées classiques :}
+        \subsection{Formules inutiles}
+        Ces formules ne servent à rien d'autre qu'à vous encombrer le cerveau, oubliez les dès que possible !
+
+        \begin{align*}
+            \de{\e{ax+b}} && \de{\cos(ax+b)} && \de{\sin(ax+b)} && \de{\frac{1}{x}}\\
+            \de{(u(x))^n}, n\in\mathbb{N} && \de{\ln(u(x))} && \de{\frac{1}{u(x)}} && \de{\sqrt{x}}
+        \end{align*}
+        Elles sont trop spécialisées et découlent des formules de la section \ref{derClassiques} et des formules de calculs précédentes.
+
+        \subsection{dérivées classiques :} \label{derClassiques}
         \begin{align*}
             \de{\cos{x}} &= -\sin{x} &\de{\sin{x}} &= \cos{x} & \de{\e{x}} &= \e{x} \\
             \de{\ln{x}} &= \frac{1}{x} 
