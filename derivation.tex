@@ -23,7 +23,7 @@
     
     \section{Rappels}
         \subsection{Théorie :}
-        On dit qu'une fonction $F$ sur $\R$ est dérivable en un point $x_0$ si
+        On dit qu'une fonction $f$ sur $\R$ est dérivable en un point $x_0$ si
         \begin{equation}
             \lim\limits_{h \to 0} \frac{f(x_0 + h)-f(x_0)}{h} \text{ existe. On nomme alors ce nombre $f'(x_0)$} 
         \end{equation}
@@ -36,19 +36,19 @@
 
         \subsection{Formules :}
         \paragraph{formules à connaître impérativement !}
-        Elles sont au nombre de 4 : Soient $f$ et $g$ deux fonctions dérivables et $x,y \in  \R $
+        Elles sont au nombre de 4 : \\Soient $u$ et $v$ deux fonctions dérivables et $x,n \in  \R $
         \begin{align}
-            (a(x) + g(x))' &= a' +g' \label{addition} \\
-            (a(x) \times g(x))' &= a'(x)g(x) + a(x)g'(x) \label{produit}\\
-            (a(g(x)))' &= a'(g(x))\times g'(x) \label{compose}\\
-            (x^y)' &= y\times x^{y-1} \label{exposant}
+            &\text{addition} & &(u(x) + v(x))' &&= &&u'+v' \label{addition} \\
+            &\text{produit} & &(u(x) \times v(x))' &&= &&u'(x)v(x) + u(x)v'(x) \label{produit}\\
+            &\text{composition} & &(u(v(x)))' &&= &&u'(v(x))\times v'(x) \label{composee}\\
+            &\text{exposant} & &(x^n)' &&= &&n\times x^{n-1} \label{exposant}
         \end{align}
         Avec ces formules, vous pouvez retrouver toutes les autres !
-        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (\ref{compose}) et (\ref{exposant}) :
+        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (\ref{composee}) et (\ref{exposant}) :
         \begin{align*}
             (y^{-1})' &= -1\times y^{-2} =-\frac{1}{y^2} \tag*{On a déjà la formule pour $1/y$ !}\\
             \frac{1}{f(x)} &= f(x)^{-1} \\ 
-            \text{Donc } \left(\frac{1}{f(x)}\right)' &=- \frac{f'(x)}{f(x)^2} \tag*{Selon (\ref{compose}) en prenant $a(x)=x^{-1}$ et $g(x)=f(x)$} 
+            \text{Donc } \left(\frac{1}{f(x)}\right)' &=- \frac{f'(x)}{f(x)^2} \tag*{Selon (\ref{compose}) en prenant $u(x)=x^{-1}$ et $v(x)=f(x)$} 
         \end{align*}
 
         \paragraph{formule utile}

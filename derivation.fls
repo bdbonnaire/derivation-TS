@@ -2,7 +2,7 @@ PWD /home/bdb/Documents/Programmation/Latex/derivation
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.tex
-OUTPUT derivation.log
+OUTPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/size11.clo
@@ -57,9 +57,9 @@ INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT derivation.aux
-INPUT derivation.aux
-OUTPUT derivation.aux
+INPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.aux
+INPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.aux
+OUTPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.aux
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
@@ -109,9 +109,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
-OUTPUT derivation.pdf
+OUTPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT derivation.aux
+INPUT /home/bdb/Documents/Programmation/Latex/derivation/derivation.aux
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
