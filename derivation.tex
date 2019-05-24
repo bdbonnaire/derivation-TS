@@ -37,14 +37,14 @@
         \subsection{Formules :}
         \paragraph{formules à connaître impérativement !}
         Elles sont au nombre de 4 : \\Soient $u$ et $v$ deux fonctions dérivables et $x,n \in  \R $
-        \begin{align}
-            &\text{addition} & &(u(x) + v(x))' &&= &&u'+v' \label{addition} \\
-            &\text{produit} & &(u(x) \times v(x))' &&= &&u'(x)v(x) + u(x)v'(x) \label{produit}\\
-            &\text{composition} & &(u(v(x)))' &&= &&u'(v(x))\times v'(x) \label{composee}\\
-            &\text{exposant} & &(x^n)' &&= &&n\times x^{n-1} \label{exposant}
-        \end{align}
+        \begin{alignat}{3}
+            &\text{addition} &\qquad& (u(x) + v(x))'&& = u'+v' \label{addition} \\
+            &\text{produit} && (u(x) \times v(x))'&& = u'(x)v(x) + u(x)v'(x) \label{produit}\\
+            &\text{composition} && (u(v(x)))'&& = u'(v(x)) \times v'(x) \label{compose}\\
+            &\text{exposant} && (x^n)'&& = n \times x^{n-1} \label{exposant}
+        \end{alignat}
         Avec ces formules, vous pouvez retrouver toutes les autres !
-        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (\ref{composee}) et (\ref{exposant}) :
+        \subparagraph{Exemple} On va retrouver la formule de $\frac{1}{f(x)}$ avec seulement (\ref{compose}) et (\ref{exposant}) :
         \begin{align*}
             (y^{-1})' &= -1\times y^{-2} =-\frac{1}{y^2} \tag*{On a déjà la formule pour $1/y$ !}\\
             \frac{1}{f(x)} &= f(x)^{-1} \\ 
